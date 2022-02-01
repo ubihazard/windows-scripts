@@ -1,0 +1,3 @@
+/* Display message in a dialog box from scripts */
+if (WScript.Arguments.length == 0) WScript.Quit(1);
+WScript.Echo(WScript.Arguments(0));

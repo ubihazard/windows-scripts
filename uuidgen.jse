@@ -1,0 +1,11 @@
+/* Generate UUID from GUID */
+
+var typeLib = WScript.CreateObject("Scriptlet.TypeLib");
+var uuid = typeLib.GUID.toString().substr(1, 36);
+
+if ((WScript.Arguments.length != 0)
+&&  (WScript.Arguments(0) == "raw")) {
+  uuid = uuid.split('-').join('');
+}
+
+WScript.StdOut.WriteLine(uuid.toLowerCase());

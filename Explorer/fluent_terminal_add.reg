@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\flute]
+@="Open Terminal here"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\flute\command]
+@="C:\\Users\\Jupiter\\AppData\\Local\\Microsoft\\WindowsApps\\flute.exe"
