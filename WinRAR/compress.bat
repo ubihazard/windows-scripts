@@ -19,4 +19,4 @@ if exist %NAME% (
 )
 
 :COMPRESS
-Rar a %NAME% %*
+"%~dp0Rar" a %NAME% %*
