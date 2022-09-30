@@ -1,5 +1,5 @@
-Explorer
---------
+Windows Explorer
+----------------
 
 Useful Explorer contextual actions.
 
