@@ -1,5 +1,5 @@
 @echo off
 
-:: Drop outdated DNS cache entries
+:: Drop outdated DNS cache entries.
 
 ipconfig /flushdns

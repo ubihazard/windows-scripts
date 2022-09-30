@@ -1,11 +1,21 @@
 /* Generate UUID from GUID */
 
+var raw = false;
+var lim16 = false;
+
+if (WScript.Arguments.length != 0) {
+  lim16 = WScript.Arguments(0) == "16";
+  raw = lim16 || WScript.Arguments(0) == "raw";
+}
+
 var typeLib = WScript.CreateObject("Scriptlet.TypeLib");
 var uuid = typeLib.GUID.toString().substr(1, 36);
 
-if ((WScript.Arguments.length != 0)
-&&  (WScript.Arguments(0) == "raw")) {
+if (raw) {
   uuid = uuid.split('-').join('');
+  if (lim16) {
+    uuid = uuid.substr(16);
+  }
 }
 
 WScript.StdOut.WriteLine(uuid.toLowerCase());

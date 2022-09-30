@@ -1,5 +1,5 @@
 /* Node.js script to give items sequential names starting from 1.
-// (Overcome limitations of `.bat` version.) */
+// (Overcome limitations of the `.bat` version.) */
 
 const fs = require ("fs");
 const dir = process.argv[2];
@@ -29,7 +29,7 @@ try {
   files.forEach (file => {
     const pos = file.lastIndexOf ('.');
     const ext = file.substring ((pos === -1) ? file.length : pos);
-    fs.renameSync (dir + '/' + file, dir + '/' + counter + ext);
+    fs.renameSync (dir + '/' + file, dir + '/' + counter + ext.toLowerCase());
     ++counter;
   });
 } catch (err) {

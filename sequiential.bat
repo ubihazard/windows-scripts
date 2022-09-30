@@ -1,7 +1,7 @@
 @echo off
 cd /d "%~dp0"
 
-:: Give items sequential names starting from 1
+:: Give items sequential names starting from 1.
 
 setlocal enabledelayedexpansion
 set counter=1

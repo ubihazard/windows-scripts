@@ -1,7 +1,7 @@
 @echo off
 cd /d "%~dp0"
 
-:: Give items random file names
+:: Give items random file names.
 
 :loop
 for /f "tokens=* usebackq" %%f in (`uuidgen.bat raw`) do (
