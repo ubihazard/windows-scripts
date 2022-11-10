@@ -14,7 +14,24 @@ var uuid = typeLib.GUID.toString().substr(1, 36);
 if (raw) {
   uuid = uuid.split('-').join('');
   if (lim16) {
-    uuid = uuid.substr(16);
+    var u1 =  (parseInt(uuid.charAt(0),  16) ^ parseInt(uuid.charAt(16), 16)).toString(16);
+    var u2 =  (parseInt(uuid.charAt(1),  16) ^ parseInt(uuid.charAt(17), 16)).toString(16);
+    var u3 =  (parseInt(uuid.charAt(2),  16) ^ parseInt(uuid.charAt(18), 16)).toString(16);
+    var u4 =  (parseInt(uuid.charAt(3),  16) ^ parseInt(uuid.charAt(19), 16)).toString(16);
+    var u5 =  (parseInt(uuid.charAt(4),  16) ^ parseInt(uuid.charAt(20), 16)).toString(16);
+    var u6 =  (parseInt(uuid.charAt(5),  16) ^ parseInt(uuid.charAt(21), 16)).toString(16);
+    var u7 =  (parseInt(uuid.charAt(6),  16) ^ parseInt(uuid.charAt(22), 16)).toString(16);
+    var u8 =  (parseInt(uuid.charAt(7),  16) ^ parseInt(uuid.charAt(23), 16)).toString(16);
+    var u9 =  (parseInt(uuid.charAt(8),  16) ^ parseInt(uuid.charAt(24), 16)).toString(16);
+    var u10 = (parseInt(uuid.charAt(9),  16) ^ parseInt(uuid.charAt(25), 16)).toString(16);
+    var u11 = (parseInt(uuid.charAt(10), 16) ^ parseInt(uuid.charAt(26), 16)).toString(16);
+    var u12 = (parseInt(uuid.charAt(11), 16) ^ parseInt(uuid.charAt(27), 16)).toString(16);
+    var u13 = (parseInt(uuid.charAt(12), 16) ^ parseInt(uuid.charAt(28), 16)).toString(16);
+    var u14 = (parseInt(uuid.charAt(13), 16) ^ parseInt(uuid.charAt(29), 16)).toString(16);
+    var u15 = (parseInt(uuid.charAt(14), 16) ^ parseInt(uuid.charAt(30), 16)).toString(16);
+    var u16 = (parseInt(uuid.charAt(15), 16) ^ parseInt(uuid.charAt(31), 16)).toString(16);
+    uuid = u1 + u2 + u3 + u4 + u5 + u6 + u7 + u8
+    + u9 + u10 + u11 + u12 + u13 + u14 + u15 + u16;
   }
 }
 
