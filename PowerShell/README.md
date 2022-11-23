@@ -3,13 +3,13 @@ PowerShell
 
 Enable execution of PowerShell scripts:
 
-```
+```pwsh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
 
 Or:
 
-```
+```pwsh
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 ```
 
