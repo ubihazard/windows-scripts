@@ -1,4 +1,6 @@
 Windows Registry Editor Version 5.00
 
+; Set the system clock to UTC
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
 "RealTimeIsUniversal"=qword:00000001

@@ -1,7 +1,7 @@
-Windows Explorer
-----------------
+Explorer
+--------
 
-Useful Explorer contextual actions.
+Explorer contextual actions to open the chosen file in custom text editor and the chosen directory in custom terminal application.
 
 ⭐ Support
 ---------

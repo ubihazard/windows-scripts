@@ -1,6 +1,6 @@
 @echo off
-setlocal enabledelayedexpansion
 cd /d "%~dp0"
+setlocal enabledelayedexpansion
 
 :: Remove new Chromium-based Microsoft Edge browser.
 
