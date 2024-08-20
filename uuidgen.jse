@@ -33,6 +33,11 @@ if (raw) {
     uuid = u1 + u2 + u3 + u4 + u5 + u6 + u7 + u8
     + u9 + u10 + u11 + u12 + u13 + u14 + u15 + u16;
   }
+} else {
+  // Windows GUIDs appear to be already conforming
+  // to RFC 4122/DCE 1.1 (version 4, variant 1 UUID)
+  //uuid[14] = '4';
+  //uuid[19] = (parseInt(uuid.charAt(19), 16) & 3 | (1 << 3)).toString(16);
 }
 
 WScript.StdOut.WriteLine(uuid.toLowerCase());
