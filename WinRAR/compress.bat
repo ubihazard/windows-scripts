@@ -1,6 +1,6 @@
 @echo off
 
-rem Send To Compress (RAR) Explorer action.
+rem Send To Compress (RAR) Explorer action
 
 set NAME=-ep1 "%~dpnx1.rar"
 if $%2==$ goto COMPRESS

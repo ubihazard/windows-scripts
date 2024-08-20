@@ -1,5 +1,7 @@
 @echo off
 cd /d "%~dp0"
 
-mkdir "%APPDATA%\WinRAR"
-copy /y rar.ini "%APPDATA%\WinRAR"
+if not exist "%APPDATA%\WinRAR\rar.ini" (
+  mkdir "%APPDATA%\WinRAR"
+  copy /y rar.ini "%APPDATA%\WinRAR"
+)

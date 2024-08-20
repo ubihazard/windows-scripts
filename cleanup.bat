@@ -13,11 +13,11 @@ reg delete "HKCU\Software\WinRAR\ArcHistory" /f
 reg delete "HKCU\Software\Kitware" /f
 
 :: Other
-rmdir /s /q "%LOCALAPPDATA%\fontconfig"
 rmdir /s /q "%USERPROFILE%\.thumbnails"
-del /q /f "%USERPROFILE%\.recently-used.xbel"
+rmdir /s /q "%LOCALAPPDATA%\fontconfig"
 del /q /f "%USERPROFILE%\.bash_history"
-del /q /f "%USERPROFILE%\.lesshst"
-del /q /f "%USERPROFILE%\.mupdf.history"
-del /q /f "%USERPROFILE%\.node_repl_history"
 del /q /f "%LOCALAPPDATA%\lxss\home\%USERNAME%\.bash_history"
+del /q /f "%USERPROFILE%\.lesshst"
+del /q /f "%USERPROFILE%\.node_repl_history"
+del /q /f "%USERPROFILE%\.mupdf.history"
+del /q /f "%USERPROFILE%\.recently-used.xbel"
